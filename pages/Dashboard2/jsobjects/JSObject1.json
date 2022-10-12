@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Dashboard2",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tupdateChart: async () => {\n\tawait storeValue('type',Chart1Copy.selectedDataPoint);\n\tassetsByMake.run()\n\treturn(assetsByMake.data)}\n}",
+    "variables": []
+  },
+  "id": "Dashboard2_JSObject1",
+  "deleted": false,
+  "gitSyncId": "6346d14a1d5032724643c347_6346d16a2d5e5234f5ad1db7"
+}
