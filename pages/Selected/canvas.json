@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 59,
+          "version": 64,
           "minHeight": 740,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -896,7 +896,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"customer_id\"]))}}",
-                                  "cellBackground": "transparent"
+                                  "cellBackground": "transparent",
+                                  "validation": {}
                                 },
                                 "order_id": {
                                   "allowCellWrapping": false,
@@ -922,7 +923,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"order_id\"]))}}",
-                                  "cellBackground": "transparent"
+                                  "cellBackground": "transparent",
+                                  "validation": {}
                                 },
                                 "payment_method": {
                                   "allowCellWrapping": false,
@@ -948,7 +950,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"payment_method\"]))}}",
-                                  "cellBackground": "transparent"
+                                  "cellBackground": "transparent",
+                                  "validation": {}
                                 },
                                 "delivery_status": {
                                   "allowCellWrapping": false,
@@ -974,7 +977,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"delivery_status\"]))}}",
-                                  "cellBackground": "transparent"
+                                  "cellBackground": "transparent",
+                                  "validation": {}
                                 },
                                 "delivery_date": {
                                   "allowCellWrapping": false,
@@ -1000,7 +1004,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"delivery_date\"]))}}",
-                                  "cellBackground": "transparent"
+                                  "cellBackground": "transparent",
+                                  "validation": {}
                                 },
                                 "expected_delivery_date": {
                                   "allowCellWrapping": false,
@@ -1026,7 +1031,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"expected_delivery_date\"]))}}",
-                                  "cellBackground": "transparent"
+                                  "cellBackground": "transparent",
+                                  "validation": {}
                                 },
                                 "on_time": {
                                   "allowCellWrapping": false,
@@ -1058,7 +1064,8 @@
                                   "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                                   "customAlias": "",
                                   "iconName": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.on_time=='1'?'tick' : 'cross'))}}",
-                                  "buttonVariant": "TERTIARY"
+                                  "buttonVariant": "TERTIARY",
+                                  "validation": {}
                                 },
                                 "delivery_value": {
                                   "allowCellWrapping": false,
@@ -1084,7 +1091,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"delivery_value\"]))}}",
-                                  "cellBackground": "transparent"
+                                  "cellBackground": "transparent",
+                                  "validation": {}
                                 },
                                 "delivery_date_month": {
                                   "allowCellWrapping": false,
@@ -1110,7 +1118,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"delivery_date_month\"]))}}",
-                                  "cellBackground": "transparent"
+                                  "cellBackground": "transparent",
+                                  "validation": {}
                                 },
                                 "expected_delivery_date_month": {
                                   "allowCellWrapping": false,
@@ -1136,7 +1145,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"expected_delivery_date_month\"]))}}",
-                                  "cellBackground": "transparent"
+                                  "cellBackground": "transparent",
+                                  "validation": {}
                                 },
                                 "order_value": {
                                   "allowCellWrapping": false,
@@ -1162,7 +1172,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"order_value\"]))}}",
-                                  "cellBackground": "transparent"
+                                  "cellBackground": "transparent",
+                                  "validation": {}
                                 },
                                 "replacement": {
                                   "allowCellWrapping": false,
@@ -1188,7 +1199,8 @@
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.replacement=='1'?'Yes' : 'No'))}}",
-                                  "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.replacement=='1'?'#f25c54' : 'transparent'))}}"
+                                  "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow.replacement=='1'?'#f25c54' : 'transparent'))}}",
+                                  "validation": {}
                                 }
                               },
                               "onRowSelected": "{{Utils.onRowSelectedQueries()}}",
@@ -4106,16 +4118,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Selected_getCustomer",
-              "name": "getCustomer",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.URL.queryParams.cid"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Selected_getOrderinfo",
               "name": "getOrderinfo",
               "confirmBeforeExecute": false,
@@ -4127,8 +4129,21 @@
               ],
               "timeoutInMillisecond": 10000
             }
+          ],
+          [
+            {
+              "id": "Selected_getCustomer",
+              "name": "getCustomer",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.URL.queryParams.cid"
+              ],
+              "timeoutInMillisecond": 10000
+            }
           ]
         ],
+        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Selected",
         "deleted": false,
