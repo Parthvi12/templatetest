@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "randomID",
+    "pageId": "Car showroom",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\trandomSalesID: () => {\n    return Math.ceil(Math.random() * (9999 -  + 1)) + 1;\n},\n\trandomCustomerID: () => {\n    return Math.ceil(Math.random() * (99999 -  + 1)) + 1;\n} \n\t}",
+    "variables": []
+  },
+  "id": "Car showroom_randomID",
+  "deleted": false,
+  "gitSyncId": "6346d3951d5032724643c392_6346d3b92d5e5234f5ad1dfb"
+}
